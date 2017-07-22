@@ -17,7 +17,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=24")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("Describes a value that is an absolute identifier for a node.")
+    attrs.Description = ua.LocalizedText("b'Describes a value that is an absolute identifier for a node.'")
     attrs.DisplayName = ua.LocalizedText("ExpandedNodeId")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -29,7 +29,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=24")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("Describes a value that is a code representing the outcome of an operation by a Server.")
+    attrs.Description = ua.LocalizedText("b'Describes a value that is a code representing the outcome of an operation by a Server.'")
     attrs.DisplayName = ua.LocalizedText("StatusCode")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -41,7 +41,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=24")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("Describes a value that is a structure containing a value, a status code and timestamps.")
+    attrs.Description = ua.LocalizedText("b'Describes a value that is a structure containing a value, a status code and timestamps.'")
     attrs.DisplayName = ua.LocalizedText("DataValue")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -53,7 +53,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=24")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("Describes a value that is a structure containing diagnostics associated with a StatusCode.")
+    attrs.Description = ua.LocalizedText("b'Describes a value that is a structure containing diagnostics associated with a StatusCode.'")
     attrs.DisplayName = ua.LocalizedText("DiagnosticInfo")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -65,7 +65,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=7")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A numeric identifier for an object.")
+    attrs.Description = ua.LocalizedText("b'A numeric identifier for an object.'")
     attrs.DisplayName = ua.LocalizedText("IntegerId")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -77,7 +77,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=29")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("The types of applications.")
+    attrs.Description = ua.LocalizedText("b'The types of applications.'")
     attrs.DisplayName = ua.LocalizedText("ApplicationType")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -122,7 +122,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("Describes an application and how to find it.")
+    attrs.Description = ua.LocalizedText("b'Describes an application and how to find it.'")
     attrs.DisplayName = ua.LocalizedText("ApplicationDescription")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -145,7 +145,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=15")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A certificate for an instance of an application.")
+    attrs.Description = ua.LocalizedText("b'A certificate for an instance of an application.'")
     attrs.DisplayName = ua.LocalizedText("ApplicationInstanceCertificate")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -157,7 +157,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=29")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("The type of security to use on a message.")
+    attrs.Description = ua.LocalizedText("b'The type of security to use on a message.'")
     attrs.DisplayName = ua.LocalizedText("MessageSecurityMode")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -202,7 +202,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=29")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("The possible user token types.")
+    attrs.Description = ua.LocalizedText("b'The possible user token types.'")
     attrs.DisplayName = ua.LocalizedText("UserTokenType")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -247,7 +247,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("Describes a user token that can be used with a server.")
+    attrs.Description = ua.LocalizedText("b'Describes a user token that can be used with a server.'")
     attrs.DisplayName = ua.LocalizedText("UserTokenPolicy")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -259,7 +259,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("The description of a endpoint that can be used to access a server.")
+    attrs.Description = ua.LocalizedText("b'The description of a endpoint that can be used to access a server.'")
     attrs.DisplayName = ua.LocalizedText("EndpointDescription")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -271,7 +271,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("The information required to register a server with a discovery server.")
+    attrs.Description = ua.LocalizedText("b'The information required to register a server with a discovery server.'")
     attrs.DisplayName = ua.LocalizedText("RegisteredServer")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -283,7 +283,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A base type for discovery configuration information.")
+    attrs.Description = ua.LocalizedText("b'A base type for discovery configuration information.'")
     attrs.DisplayName = ua.LocalizedText("DiscoveryConfiguration")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -295,7 +295,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=12890")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("The discovery information needed for mDNS registration.")
+    attrs.Description = ua.LocalizedText("b'The discovery information needed for mDNS registration.'")
     attrs.DisplayName = ua.LocalizedText("MdnsDiscoveryConfiguration")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -307,7 +307,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=29")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("Indicates whether a token if being created or renewed.")
+    attrs.Description = ua.LocalizedText("b'Indicates whether a token if being created or renewed.'")
     attrs.DisplayName = ua.LocalizedText("SecurityTokenRequestType")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -352,7 +352,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A software certificate with a digital signature.")
+    attrs.Description = ua.LocalizedText("b'A software certificate with a digital signature.'")
     attrs.DisplayName = ua.LocalizedText("SignedSoftwareCertificate")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -364,7 +364,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=17")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A unique identifier for a session used to authenticate requests.")
+    attrs.Description = ua.LocalizedText("b'A unique identifier for a session used to authenticate requests.'")
     attrs.DisplayName = ua.LocalizedText("SessionAuthenticationToken")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -376,7 +376,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A base type for a user identity token.")
+    attrs.Description = ua.LocalizedText("b'A base type for a user identity token.'")
     attrs.DisplayName = ua.LocalizedText("UserIdentityToken")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -388,7 +388,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=316")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A token representing an anonymous user.")
+    attrs.Description = ua.LocalizedText("b'A token representing an anonymous user.'")
     attrs.DisplayName = ua.LocalizedText("AnonymousIdentityToken")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -400,7 +400,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=316")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A token representing a user identified by a user name and password.")
+    attrs.Description = ua.LocalizedText("b'A token representing a user identified by a user name and password.'")
     attrs.DisplayName = ua.LocalizedText("UserNameIdentityToken")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -412,7 +412,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=316")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A token representing a user identified by an X509 certificate.")
+    attrs.Description = ua.LocalizedText("b'A token representing a user identified by an X509 certificate.'")
     attrs.DisplayName = ua.LocalizedText("X509IdentityToken")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -435,7 +435,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=316")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A token representing a user identified by a WS-Security XML token.")
+    attrs.Description = ua.LocalizedText("b'A token representing a user identified by a WS-Security XML token.'")
     attrs.DisplayName = ua.LocalizedText("IssuedIdentityToken")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -447,7 +447,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=29")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("The bits used to specify default attributes for a new node.")
+    attrs.Description = ua.LocalizedText("b'The bits used to specify default attributes for a new node.'")
     attrs.DisplayName = ua.LocalizedText("NodeAttributesMask")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -474,163 +474,163 @@ def create_standard_address_space_Part4(server):
     value = []
     extobj = ua.EnumValueType()
     extobj.Value = 0
-    extobj.DisplayName.Text = b'None'
-    extobj.Description.Text = b'No attribuites provided.'
+    extobj.DisplayName.Text = 'None'
+    extobj.Description.Text = 'No attribuites provided.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1
-    extobj.DisplayName.Text = b'AccessLevel'
-    extobj.Description.Text = b'The access level attribute is specified.'
+    extobj.DisplayName.Text = 'AccessLevel'
+    extobj.Description.Text = 'The access level attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 2
-    extobj.DisplayName.Text = b'ArrayDimensions'
-    extobj.Description.Text = b'The array dimensions attribute is specified.'
+    extobj.DisplayName.Text = 'ArrayDimensions'
+    extobj.Description.Text = 'The array dimensions attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 4
-    extobj.DisplayName.Text = b'BrowseName'
-    extobj.Description.Text = b'The browse name attribute is specified.'
+    extobj.DisplayName.Text = 'BrowseName'
+    extobj.Description.Text = 'The browse name attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 8
-    extobj.DisplayName.Text = b'ContainsNoLoops'
-    extobj.Description.Text = b'The contains no loops attribute is specified.'
+    extobj.DisplayName.Text = 'ContainsNoLoops'
+    extobj.Description.Text = 'The contains no loops attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 16
-    extobj.DisplayName.Text = b'DataType'
-    extobj.Description.Text = b'The data type attribute is specified.'
+    extobj.DisplayName.Text = 'DataType'
+    extobj.Description.Text = 'The data type attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 32
-    extobj.DisplayName.Text = b'Description'
-    extobj.Description.Text = b'The description attribute is specified.'
+    extobj.DisplayName.Text = 'Description'
+    extobj.Description.Text = 'The description attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 64
-    extobj.DisplayName.Text = b'DisplayName'
-    extobj.Description.Text = b'The display name attribute is specified.'
+    extobj.DisplayName.Text = 'DisplayName'
+    extobj.Description.Text = 'The display name attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 128
-    extobj.DisplayName.Text = b'EventNotifier'
-    extobj.Description.Text = b'The event notifier attribute is specified.'
+    extobj.DisplayName.Text = 'EventNotifier'
+    extobj.Description.Text = 'The event notifier attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 256
-    extobj.DisplayName.Text = b'Executable'
-    extobj.Description.Text = b'The executable attribute is specified.'
+    extobj.DisplayName.Text = 'Executable'
+    extobj.Description.Text = 'The executable attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 512
-    extobj.DisplayName.Text = b'Historizing'
-    extobj.Description.Text = b'The historizing attribute is specified.'
+    extobj.DisplayName.Text = 'Historizing'
+    extobj.Description.Text = 'The historizing attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1024
-    extobj.DisplayName.Text = b'InverseName'
-    extobj.Description.Text = b'The inverse name attribute is specified.'
+    extobj.DisplayName.Text = 'InverseName'
+    extobj.Description.Text = 'The inverse name attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 2048
-    extobj.DisplayName.Text = b'IsAbstract'
-    extobj.Description.Text = b'The is abstract attribute is specified.'
+    extobj.DisplayName.Text = 'IsAbstract'
+    extobj.Description.Text = 'The is abstract attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 4096
-    extobj.DisplayName.Text = b'MinimumSamplingInterval'
-    extobj.Description.Text = b'The minimum sampling interval attribute is specified.'
+    extobj.DisplayName.Text = 'MinimumSamplingInterval'
+    extobj.Description.Text = 'The minimum sampling interval attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 8192
-    extobj.DisplayName.Text = b'NodeClass'
-    extobj.Description.Text = b'The node class attribute is specified.'
+    extobj.DisplayName.Text = 'NodeClass'
+    extobj.Description.Text = 'The node class attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 16384
-    extobj.DisplayName.Text = b'NodeId'
-    extobj.Description.Text = b'The node id attribute is specified.'
+    extobj.DisplayName.Text = 'NodeId'
+    extobj.Description.Text = 'The node id attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 32768
-    extobj.DisplayName.Text = b'Symmetric'
-    extobj.Description.Text = b'The symmetric attribute is specified.'
+    extobj.DisplayName.Text = 'Symmetric'
+    extobj.Description.Text = 'The symmetric attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 65536
-    extobj.DisplayName.Text = b'UserAccessLevel'
-    extobj.Description.Text = b'The user access level attribute is specified.'
+    extobj.DisplayName.Text = 'UserAccessLevel'
+    extobj.Description.Text = 'The user access level attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 131072
-    extobj.DisplayName.Text = b'UserExecutable'
-    extobj.Description.Text = b'The user executable attribute is specified.'
+    extobj.DisplayName.Text = 'UserExecutable'
+    extobj.Description.Text = 'The user executable attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 262144
-    extobj.DisplayName.Text = b'UserWriteMask'
-    extobj.Description.Text = b'The user write mask attribute is specified.'
+    extobj.DisplayName.Text = 'UserWriteMask'
+    extobj.Description.Text = 'The user write mask attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 524288
-    extobj.DisplayName.Text = b'ValueRank'
-    extobj.Description.Text = b'The value rank attribute is specified.'
+    extobj.DisplayName.Text = 'ValueRank'
+    extobj.Description.Text = 'The value rank attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1048576
-    extobj.DisplayName.Text = b'WriteMask'
-    extobj.Description.Text = b'The write mask attribute is specified.'
+    extobj.DisplayName.Text = 'WriteMask'
+    extobj.Description.Text = 'The write mask attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 2097152
-    extobj.DisplayName.Text = b'Value'
-    extobj.Description.Text = b'The value attribute is specified.'
+    extobj.DisplayName.Text = 'Value'
+    extobj.Description.Text = 'The value attribute is specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 4194303
-    extobj.DisplayName.Text = b'All'
-    extobj.Description.Text = b'All attributes are specified.'
+    extobj.DisplayName.Text = 'All'
+    extobj.Description.Text = 'All attributes are specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1335396
-    extobj.DisplayName.Text = b'BaseNode'
-    extobj.Description.Text = b'All base attributes are specified.'
+    extobj.DisplayName.Text = 'BaseNode'
+    extobj.Description.Text = 'All base attributes are specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1335524
-    extobj.DisplayName.Text = b'Object'
-    extobj.Description.Text = b'All object attributes are specified.'
+    extobj.DisplayName.Text = 'Object'
+    extobj.Description.Text = 'All object attributes are specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1337444
-    extobj.DisplayName.Text = b'ObjectTypeOrDataType'
-    extobj.Description.Text = b'All object type or data type attributes are specified.'
+    extobj.DisplayName.Text = 'ObjectTypeOrDataType'
+    extobj.Description.Text = 'All object type or data type attributes are specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 4026999
-    extobj.DisplayName.Text = b'Variable'
-    extobj.Description.Text = b'All variable attributes are specified.'
+    extobj.DisplayName.Text = 'Variable'
+    extobj.Description.Text = 'All variable attributes are specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 3958902
-    extobj.DisplayName.Text = b'VariableType'
-    extobj.Description.Text = b'All variable type attributes are specified.'
+    extobj.DisplayName.Text = 'VariableType'
+    extobj.Description.Text = 'All variable type attributes are specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1466724
-    extobj.DisplayName.Text = b'Method'
-    extobj.Description.Text = b'All method attributes are specified.'
+    extobj.DisplayName.Text = 'Method'
+    extobj.Description.Text = 'All method attributes are specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1371236
-    extobj.DisplayName.Text = b'ReferenceType'
-    extobj.Description.Text = b'All reference type attributes are specified.'
+    extobj.DisplayName.Text = 'ReferenceType'
+    extobj.Description.Text = 'All reference type attributes are specified.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1335532
-    extobj.DisplayName.Text = b'View'
-    extobj.Description.Text = b'All view attributes are specified.'
+    extobj.DisplayName.Text = 'View'
+    extobj.Description.Text = 'All view attributes are specified.'
     value.append(extobj)
     attrs.Value = ua.Variant(value, ua.VariantType.ExtensionObject)
     attrs.ValueRank = 1
@@ -653,7 +653,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A request to add a node to the server address space.")
+    attrs.Description = ua.LocalizedText("b'A request to add a node to the server address space.'")
     attrs.DisplayName = ua.LocalizedText("AddNodesItem")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -665,7 +665,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A request to add a reference to the server address space.")
+    attrs.Description = ua.LocalizedText("b'A request to add a reference to the server address space.'")
     attrs.DisplayName = ua.LocalizedText("AddReferencesItem")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -677,7 +677,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A request to delete a node to the server address space.")
+    attrs.Description = ua.LocalizedText("b'A request to delete a node to the server address space.'")
     attrs.DisplayName = ua.LocalizedText("DeleteNodesItem")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -689,7 +689,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A request to delete a node from the server address space.")
+    attrs.Description = ua.LocalizedText("b'A request to delete a node from the server address space.'")
     attrs.DisplayName = ua.LocalizedText("DeleteReferencesItem")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -701,7 +701,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=29")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("Define bits used to indicate which attributes are writable.")
+    attrs.Description = ua.LocalizedText("b'Define bits used to indicate which attributes are writable.'")
     attrs.DisplayName = ua.LocalizedText("AttributeWriteMask")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -728,118 +728,118 @@ def create_standard_address_space_Part4(server):
     value = []
     extobj = ua.EnumValueType()
     extobj.Value = 0
-    extobj.DisplayName.Text = b'None'
-    extobj.Description.Text = b'No attributes are writable.'
+    extobj.DisplayName.Text = 'None'
+    extobj.Description.Text = 'No attributes are writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1
-    extobj.DisplayName.Text = b'AccessLevel'
-    extobj.Description.Text = b'The access level attribute is writable.'
+    extobj.DisplayName.Text = 'AccessLevel'
+    extobj.Description.Text = 'The access level attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 2
-    extobj.DisplayName.Text = b'ArrayDimensions'
-    extobj.Description.Text = b'The array dimensions attribute is writable.'
+    extobj.DisplayName.Text = 'ArrayDimensions'
+    extobj.Description.Text = 'The array dimensions attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 4
-    extobj.DisplayName.Text = b'BrowseName'
-    extobj.Description.Text = b'The browse name attribute is writable.'
+    extobj.DisplayName.Text = 'BrowseName'
+    extobj.Description.Text = 'The browse name attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 8
-    extobj.DisplayName.Text = b'ContainsNoLoops'
-    extobj.Description.Text = b'The contains no loops attribute is writable.'
+    extobj.DisplayName.Text = 'ContainsNoLoops'
+    extobj.Description.Text = 'The contains no loops attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 16
-    extobj.DisplayName.Text = b'DataType'
-    extobj.Description.Text = b'The data type attribute is writable.'
+    extobj.DisplayName.Text = 'DataType'
+    extobj.Description.Text = 'The data type attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 32
-    extobj.DisplayName.Text = b'Description'
-    extobj.Description.Text = b'The description attribute is writable.'
+    extobj.DisplayName.Text = 'Description'
+    extobj.Description.Text = 'The description attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 64
-    extobj.DisplayName.Text = b'DisplayName'
-    extobj.Description.Text = b'The display name attribute is writable.'
+    extobj.DisplayName.Text = 'DisplayName'
+    extobj.Description.Text = 'The display name attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 128
-    extobj.DisplayName.Text = b'EventNotifier'
-    extobj.Description.Text = b'The event notifier attribute is writable.'
+    extobj.DisplayName.Text = 'EventNotifier'
+    extobj.Description.Text = 'The event notifier attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 256
-    extobj.DisplayName.Text = b'Executable'
-    extobj.Description.Text = b'The executable attribute is writable.'
+    extobj.DisplayName.Text = 'Executable'
+    extobj.Description.Text = 'The executable attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 512
-    extobj.DisplayName.Text = b'Historizing'
-    extobj.Description.Text = b'The historizing attribute is writable.'
+    extobj.DisplayName.Text = 'Historizing'
+    extobj.Description.Text = 'The historizing attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1024
-    extobj.DisplayName.Text = b'InverseName'
-    extobj.Description.Text = b'The inverse name attribute is writable.'
+    extobj.DisplayName.Text = 'InverseName'
+    extobj.Description.Text = 'The inverse name attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 2048
-    extobj.DisplayName.Text = b'IsAbstract'
-    extobj.Description.Text = b'The is abstract attribute is writable.'
+    extobj.DisplayName.Text = 'IsAbstract'
+    extobj.Description.Text = 'The is abstract attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 4096
-    extobj.DisplayName.Text = b'MinimumSamplingInterval'
-    extobj.Description.Text = b'The minimum sampling interval attribute is writable.'
+    extobj.DisplayName.Text = 'MinimumSamplingInterval'
+    extobj.Description.Text = 'The minimum sampling interval attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 8192
-    extobj.DisplayName.Text = b'NodeClass'
-    extobj.Description.Text = b'The node class attribute is writable.'
+    extobj.DisplayName.Text = 'NodeClass'
+    extobj.Description.Text = 'The node class attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 16384
-    extobj.DisplayName.Text = b'NodeId'
-    extobj.Description.Text = b'The node id attribute is writable.'
+    extobj.DisplayName.Text = 'NodeId'
+    extobj.Description.Text = 'The node id attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 32768
-    extobj.DisplayName.Text = b'Symmetric'
-    extobj.Description.Text = b'The symmetric attribute is writable.'
+    extobj.DisplayName.Text = 'Symmetric'
+    extobj.Description.Text = 'The symmetric attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 65536
-    extobj.DisplayName.Text = b'UserAccessLevel'
-    extobj.Description.Text = b'The user access level attribute is writable.'
+    extobj.DisplayName.Text = 'UserAccessLevel'
+    extobj.Description.Text = 'The user access level attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 131072
-    extobj.DisplayName.Text = b'UserExecutable'
-    extobj.Description.Text = b'The user executable attribute is writable.'
+    extobj.DisplayName.Text = 'UserExecutable'
+    extobj.Description.Text = 'The user executable attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 262144
-    extobj.DisplayName.Text = b'UserWriteMask'
-    extobj.Description.Text = b'The user write mask attribute is writable.'
+    extobj.DisplayName.Text = 'UserWriteMask'
+    extobj.Description.Text = 'The user write mask attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 524288
-    extobj.DisplayName.Text = b'ValueRank'
-    extobj.Description.Text = b'The value rank attribute is writable.'
+    extobj.DisplayName.Text = 'ValueRank'
+    extobj.Description.Text = 'The value rank attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 1048576
-    extobj.DisplayName.Text = b'WriteMask'
-    extobj.Description.Text = b'The write mask attribute is writable.'
+    extobj.DisplayName.Text = 'WriteMask'
+    extobj.Description.Text = 'The write mask attribute is writable.'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 2097152
-    extobj.DisplayName.Text = b'ValueForVariableType'
-    extobj.Description.Text = b'The value attribute is writable.'
+    extobj.DisplayName.Text = 'ValueForVariableType'
+    extobj.Description.Text = 'The value attribute is writable.'
     value.append(extobj)
     attrs.Value = ua.Variant(value, ua.VariantType.ExtensionObject)
     attrs.ValueRank = 1
@@ -862,7 +862,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=15")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("An identifier for a suspended query or browse operation.")
+    attrs.Description = ua.LocalizedText("b'An identifier for a suspended query or browse operation.'")
     attrs.DisplayName = ua.LocalizedText("ContinuationPoint")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -874,7 +874,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("An element in a relative path.")
+    attrs.Description = ua.LocalizedText("b'An element in a relative path.'")
     attrs.DisplayName = ua.LocalizedText("RelativePathElement")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -886,7 +886,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=22")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A relative path constructed from reference types and browse names.")
+    attrs.Description = ua.LocalizedText("b'A relative path constructed from reference types and browse names.'")
     attrs.DisplayName = ua.LocalizedText("RelativePath")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -898,7 +898,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=7")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A monotonically increasing value.")
+    attrs.Description = ua.LocalizedText("b'A monotonically increasing value.'")
     attrs.DisplayName = ua.LocalizedText("Counter")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -910,7 +910,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=12")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("Specifies a range of array indexes.")
+    attrs.Description = ua.LocalizedText("b'Specifies a range of array indexes.'")
     attrs.DisplayName = ua.LocalizedText("NumericRange")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -922,7 +922,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=12")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A time value specified as HH:MM:SS.SSS.")
+    attrs.Description = ua.LocalizedText("b'A time value specified as HH:MM:SS.SSS.'")
     attrs.DisplayName = ua.LocalizedText("Time")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -934,7 +934,7 @@ def create_standard_address_space_Part4(server):
     node.ParentNodeId = ua.NodeId.from_string("i=13")
     node.ReferenceTypeId = ua.NodeId.from_string("i=45")
     attrs = ua.DataTypeAttributes()
-    attrs.Description = ua.LocalizedText("A date value.")
+    attrs.Description = ua.LocalizedText("b'A date value.'")
     attrs.DisplayName = ua.LocalizedText("Date")
     node.NodeAttributes = attrs
     server.add_nodes([node])
@@ -1181,19 +1181,19 @@ def create_standard_address_space_Part4(server):
     value = []
     extobj = ua.EnumValueType()
     extobj.Value = 1
-    extobj.DisplayName.Text = b'Insert'
+    extobj.DisplayName.Text = 'Insert'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 2
-    extobj.DisplayName.Text = b'Replace'
+    extobj.DisplayName.Text = 'Replace'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 3
-    extobj.DisplayName.Text = b'Update'
+    extobj.DisplayName.Text = 'Update'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 4
-    extobj.DisplayName.Text = b'Delete'
+    extobj.DisplayName.Text = 'Delete'
     value.append(extobj)
     attrs.Value = ua.Variant(value, ua.VariantType.ExtensionObject)
     attrs.ValueRank = 1
@@ -1242,19 +1242,19 @@ def create_standard_address_space_Part4(server):
     value = []
     extobj = ua.EnumValueType()
     extobj.Value = 1
-    extobj.DisplayName.Text = b'Insert'
+    extobj.DisplayName.Text = 'Insert'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 2
-    extobj.DisplayName.Text = b'Replace'
+    extobj.DisplayName.Text = 'Replace'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 3
-    extobj.DisplayName.Text = b'Update'
+    extobj.DisplayName.Text = 'Update'
     value.append(extobj)
     extobj = ua.EnumValueType()
     extobj.Value = 4
-    extobj.DisplayName.Text = b'Remove'
+    extobj.DisplayName.Text = 'Remove'
     value.append(extobj)
     attrs.Value = ua.Variant(value, ua.VariantType.ExtensionObject)
     attrs.ValueRank = 1
