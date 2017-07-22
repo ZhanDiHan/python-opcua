@@ -11,7 +11,6 @@ import xmlparser
 
 def _to_val(objs, attr, val):
     from opcua import ua
-    print("got ", objs, attr, val)
     cls = getattr(ua, objs[0])
     for o in objs[1:]:
         cls = getattr(ua, cls.ua_types[o])
@@ -162,7 +161,6 @@ def create_standard_address_space_{0!s}(server):
             self.writecode(indent, 'attrs.ArrayDimensions = {0}'.format(obj.dimensions))
     
     def make_ext_obj_code(self, indent, extobj):
-        print("makeing code for ", extobj.objname)
         self.writecode(indent, 'extobj = ua.{0}()'.format(extobj.objname))
         for name, val in extobj.body:
             for k, v in val:
@@ -247,7 +245,7 @@ def create_standard_address_space_{0!s}(server):
         self.make_node_code(obj, indent)
         self.writecode(indent, 'attrs = ua.DataTypeAttributes()')
         if obj.desc:
-            self.writecode(indent, u'attrs.Description = ua.LocalizedText("{0}")'.format(obj.desc.encode('ascii', 'replace')))
+            self.writecode(indent, u'attrs.Description = ua.LocalizedText("{0}")'.format(obj.desc))
         self.writecode(indent, 'attrs.DisplayName = ua.LocalizedText("{0}")'.format(obj.displayname))
         if obj.abstract:
             self.writecode(indent, 'attrs.IsAbstract = {0}'.format(obj.abstract))
@@ -283,7 +281,8 @@ def save_aspace_to_disk():
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.WARN)
-    for i in (3, 4, 5, 8, 9, 10, 11, 13):
+    #for i in (3, 4, 5, 8, 9, 10, 11, 13):
+    for i in (3,):
         xmlpath = "Opc.Ua.NodeSet2.Part{0}.xml".format(str(i))
         cpppath = "../opcua/server/standard_address_space/standard_address_space_part{0}.py".format(str(i))
         c = CodeGenerator(xmlpath, cpppath)
