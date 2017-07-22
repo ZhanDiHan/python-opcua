@@ -280,14 +280,13 @@ class XMLParser(object):
         return "".join(txtlist)
 
     def _parse_list_of_localized_text(self, el):
-        # FIXME Why not calling parse_body as for LocalizedText without list?
         value = []
         for localized_text in el:
-            ntag = self._retag.match(localized_text.tag).groups()[1]
-            for child in localized_text:
-                ntag = self._retag.match(child.tag).groups()[1]
-                if ntag == 'Text':
-                    value.append(self._get_text(child))
+            mylist = self._parse_body(localized_text)
+            # small hack since we did not handle LocalizedText as ExtensionObject at begynning
+            for name, val in mylist:
+                if name == "Text":
+                    value.append(val)
         return value
 
     def _parse_list_of_extension_object(self, el):
