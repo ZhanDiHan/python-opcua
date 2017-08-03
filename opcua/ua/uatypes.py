@@ -1128,6 +1128,8 @@ def register_extension_object(name, nodeid, class_type):
     logger.warning("registring new extension object: %s %s %s", name, nodeid, class_type)
     extension_object_classes[nodeid] = class_type
     extension_object_ids[name] = nodeid
+    import opcua.ua
+    setattr(opcua.ua, name, class_type)
 
 def get_extensionobject_class_type(typeid):
     """
